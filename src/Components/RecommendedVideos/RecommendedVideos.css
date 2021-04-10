@@ -1,0 +1,31 @@
+.recommendedVideos{
+	flex: 0.8;
+	/*border: 1px solid black;*/
+	background-color: #f9f9f9;
+	padding: 40px 20px;
+	padding-bottom: 0;
+}
+
+.recommendedVideos > h2{  /*giving style to heading Recommendations whose parent is recommendedVideos*/
+	margin-left: 5px;
+	margin-bottom: 20px;
+}
+.recommendedVideos__videos{
+	display: flex; /*see by doing this we get all the cards in one line*/
+	flex-wrap: wrap;
+}
+
+
+@media all and (max-width: 607px){
+
+	.recommendedVideos{
+
+	padding: 20px 10px;
+	padding-bottom: 0;
+}
+	.recommendedVideos >h2{
+		font-size: 13px;
+
+}
+
+}

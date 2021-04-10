@@ -1,0 +1,75 @@
+.videoCard{
+	width: 270px;
+	margin-bottom: 40px;
+	margin-left: 30px;
+}
+.videoCard__thumbnail{
+	height: 140px;
+	width: 240px;
+}
+.videoCard__info{
+	display: flex;
+	margin-top: 10px;
+	padding-right: 30px; /*so that it doesnt overflow to the right ie cross the right corner of the image*/
+}
+.videoCard__text{
+	margin-left: 15px;
+}
+
+.videoCard__text > h4{ /*targert the h4 whose parent is videoCard__text*/
+	font-size: 14px;
+	margin-bottom: 5px; /*so that it doesnt touch the paragraph*/
+
+}
+
+.videoCard__text > p{
+	font-size: 14px;
+	color: gray;
+}
+
+.videoCard__avatar{
+	height: 30px !important;  /*important added as it is a material ui element*/
+	width: 30px !important;
+}
+
+
+@media all and (max-width: 607px)
+{
+
+
+	.videoCard{
+	width: 135px;
+	margin-bottom: 20px;
+	margin-left: 15px;
+}
+.videoCard__thumbnail{
+	height: 70px;
+	width: 120px;
+}
+.videoCard__info{
+	display: flex;
+	margin-top: 5px;
+	padding-right: 15px; /*so that it doesnt overflow to the right ie cross the right corner of the image*/
+}
+.videoCard__text{
+	margin-left: 8px;
+}
+
+.videoCard__text > h4{ /*targert the h4 whose parent is videoCard__text*/
+	font-size: 7px;
+	margin-bottom: 3px; /*so that it doesnt touch the paragraph*/
+
+}
+
+.videoCard__text > p{
+	font-size: 7px;
+	color: gray;
+}
+
+.videoCard__avatar{
+	height: 15px !important;  /*important added as it is a material ui element*/
+	width: 15px !important;
+}
+
+
+}

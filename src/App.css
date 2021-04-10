@@ -1,0 +1,4 @@
+.app__page{
+	display: flex; /*see by default we have display: block so it is stacked on top of each other by default*/
+}
+

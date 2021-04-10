@@ -1,0 +1,59 @@
+.channelRow{
+	display: flex;
+	align-items: center;
+	width: 70%; /*so that it doesnt become too big*/
+
+}
+.channelRow__text{
+	display: flex; /*this brings everything in a row*/
+	flex-direction: column; /*now every tag will be in a column*/
+
+}
+
+.channelRow__text > p{ /*targetting only the p tags of the text*/
+	color: #606060;
+	font-size: small !important;
+}
+
+.channelRow__logo{
+	height: 120px !important;
+	width: 120px !important;
+	margin: 10px 60px;
+
+}
+.channelRow__text > h4{ /*target only the h4 which contains tick and the title of the channel*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between; /*to have space between the tick and the title*/ 
+
+}
+
+@media all and (max-width: 893px){
+	.channelRow{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+
+
+	}
+
+
+}
+
+@media all and (max-width: 430px)
+{
+	.channelRow__logo{
+	height: 90px !important;
+	width: 90px !important;
+	margin: 5px 30px;
+
+}
+
+.channelRow__text > p{ /*targetting only the p tags of the text*/
+	
+	font-size: 10px !important;
+}
+
+
+
+}

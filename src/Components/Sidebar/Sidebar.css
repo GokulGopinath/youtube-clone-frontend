@@ -1,0 +1,12 @@
+.sidebar{
+	flex: 0.2;
+}
+.sidebar>hr{ /*apply properties on hr ie the children of sidebar*/
+	height: 1px;
+	border: 0; /*removes the visibility of line*/
+	background-color: lightgray; /*gives the line gray color*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+
+}

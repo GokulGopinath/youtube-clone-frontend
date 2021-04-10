@@ -1,0 +1,25 @@
+.searchPage{
+	flex: 0.8; /*as the search page take remaining 80% of the space*/
+	background-color: #f9f9f9;
+	padding: 20px 20px; /*see it is padding so the contents will be at a distance of 20px from the corner and
+												 background-color of the padded area will be #f9f9f9*/ 
+}
+.searchPage__filter{
+	display: flex;
+	align-items: center; /*both icon and the text filter come in the same line*/
+	color: #606060;
+	font-size: xx-small !important;
+}
+.searchPage__filter > h2{
+	margin-left: 10px;
+}
+
+.searchPage>hr{ /*apply properties on hr ie the children of sidebar*/
+	height: 1px;
+	border: 0; /*removes the visibility of line*/
+	background-color: lightgray; /*gives the line gray color*/
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+
+}

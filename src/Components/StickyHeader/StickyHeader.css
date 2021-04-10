@@ -1,0 +1,162 @@
+.header{
+	display: flex; /*now all the children by default go into a row and allow us get all flex properties*/
+	align-items: center; /*brings all the item to the center ie on a straigt line ie ---------------------------*/
+	justify-content: space-between; /*we have all the children with space between them*/
+	padding: 20px; /*gave a padding of 20px around it so that it doesnt touch the sides*/ 
+
+	/*giving sticky functionality*/
+
+	position: sticky;
+	top: 0; /*keeping top 0 means it will stick to the top*/
+	z-index: 100; /*zindex means header will remain on top of all the things ie it is opaque*/
+	background-color: white; /*this will make sure header space is white as we scroll*/
+}
+.header__logo{
+	height: 25px;
+	/*width: 400px;*/
+	object-fit: contain; /*see if we give a width of 400px then the image gets distorted as it is a png. so we do this line to take care of that distortion. so use it when dealing with images*/
+
+	margin-left: 20px; /*we dont want the youtube logo to touch the menu icon so we give some margin-left*/
+}
+
+.header__icons{
+	display: flex;			/*as soon we enclose in div tags the children are no longer display flex so we need to apply it again*/ 
+	align-items: center;  	/*brings all the item to the center ie on a straigt line ie ---------------------------*/
+
+}
+.header__input{
+	display: flex;			/*as soon we enclose in div tags the children are no longer display flex so we need to apply it again*/ 
+	align-items: center;  	/*brings all the item to the center ie on a straigt line ie ---------------------------*/
+	width: 40%; /*take 40% of the available space*/
+	border: 1px solid black;
+
+}
+
+.header__icon{
+	margin-right: 8px;
+}
+
+.header__inputButton{
+	width: 50px !important; /*inorder to override the default material ui width we write important and
+	 width doesnt mean the size of the search icon instead space is produced. 
+	i think same result would have been obtained from margin*/
+	/*height: 50px !important;*/
+	background-color: #fafafa;
+	border-left: 1px solid gray;
+	color: gray; /*color of the icon should be gray*/
+
+
+
+
+
+
+
+}
+/*.header__left{
+	display: flex;			//as soon we enclose in div tags the children are no longer display flex so we need to apply it again 
+	align-items: center;  	//brings all the item to the center ie on a straigt line ie ---------------------------
+}
+*/
+.header__input > input{  /* so by this we are targetting the input box which is the direct child of header__input*/
+	flex: 1; /*this means use as much room you have inside the container so this will push search sign to the end*/
+	border: none; /*we are removing the border of the input field*/
+	outline-style: none; /*here what it it does is it removes the the outline in the search field when we click the search field*/
+
+}
+
+@media all and (max-width: 607px){
+
+	.header{
+	display: flex; /*now all the children by default go into a row and allow us get all flex properties*/
+	align-items: center; /*brings all the item to the center ie on a straigt line ie ---------------------------*/
+	justify-content: space-between; /*we have all the children with space between them*/
+	padding: 20px; /*gave a padding of 20px around it so that it doesnt touch the sides*/ 
+
+	/*giving sticky functionality*/
+
+	position: sticky;
+	top: 0; /*keeping top 0 means it will stick to the top*/
+	z-index: 100; /*zindex means header will remain on top of all the things ie it is opaque*/
+	background-color: white; /*this will make sure header space is white as we scroll*/
+}
+.header__logo{
+	flex:0.3; 
+	height: 20px;
+	/*width: 400px;*/
+	object-fit: contain; /*see if we give a width of 400px then the image gets distorted as it is a png. so we do this line to take care of that distortion. so use it when dealing with images*/
+
+	margin-left: 10px; /*we dont want the youtube logo to touch the menu icon so we give some margin-left*/
+}
+
+.header__icons{
+	/*flex:0.3;*/
+	display: flex;			/*as soon we enclose in div tags the children are no longer display flex so we need to apply it again*/ 
+	align-items: center;  	/*brings all the item to the center ie on a straigt line ie ---------------------------*/
+
+}
+.header__input{
+	flex:0.7;
+	display: flex;			/*as soon we enclose in div tags the children are no longer display flex so we need to apply it again*/ 
+	align-items: center;  	/*brings all the item to the center ie on a straigt line ie ---------------------------*/
+	width: 40%; /*take 40% of the available space*/
+	border: 1px solid black;
+
+}
+
+.header__icon{
+	margin-right: 8px;
+}
+
+.header__inputButton{
+	width: 20px !important; /*inorder to override the default material ui width we write important and
+	 width doesnt mean the size of the search icon instead space is produced. 
+	i think same result would have been obtained from margin*/
+	/*height: 50px !important;*/
+	background-color: #fafafa;
+	border-left: 1px solid gray;
+	color: gray; /*color of the icon should be gray*/
+
+
+
+
+
+
+
+}
+/*.header__left{
+	display: flex;			//as soon we enclose in div tags the children are no longer display flex so we need to apply it again 
+	align-items: center;  	//brings all the item to the center ie on a straigt line ie ---------------------------
+}
+*/
+.header__input > input{  /* so by this we are targetting the input box which is the direct child of header__input*/
+	/*flex: 1;*/ /*this means use as much room you have inside the container so this will push search sign to the end*/
+	border: none; /*we are removing the border of the input field*/
+	outline-style: none; /*here what it it does is it removes the the outline in the search field when we click the search field*/
+	width: 90%;
+
+}
+
+	
+
+
+}
+
+
+@media all and (max-width: 386px){
+	.header__icon{
+		width: 20px !important;
+	}
+
+	.header__avatar{
+		width: 25px !important;	
+	}
+
+
+	.header__menu{
+		width: 15px !important;	
+	}
+	
+	
+
+
+}
