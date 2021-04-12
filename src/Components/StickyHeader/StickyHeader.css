@@ -43,6 +43,7 @@
 	/*height: 50px !important;*/
 	background-color: #fafafa;
 	border-left: 1px solid gray;
+	margin-bottom: -4px; /*to fix breaking of css due to link tag*/
 	color: gray; /*color of the icon should be gray*/
 
 
